@@ -25,4 +25,8 @@ public class MissileWarsBukkit18 extends MissileWarsBukkit110 {
 		team.setNameTagVisibility(org.bukkit.scoreboard.NameTagVisibility.valueOf(visibility.toString()));
 	}
 
+	@Override
+	public void setItemInMainHand(Player player, ItemStack item) {
+		player.setItemInHand(item);
+	}
 }
